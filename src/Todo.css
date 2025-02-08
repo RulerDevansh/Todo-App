@@ -58,15 +58,24 @@
 #listItem:hover {
     background-color: whitesmoke;
 }
-#listItem div{
+#listItem #task{
     display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: center;
 }
+#done {
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    padding:2px;
+    margin-right: 3px;
+    font-size: clamp(.4rem, 2vw, .8rem);
+}
 #del {
     background-color: #f44336;
-    color: #fff;
+    color: #001524;
     cursor: pointer;
     border-radius: 5px;
     padding:2px;

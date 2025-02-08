@@ -23,6 +23,10 @@ export default function Todo() {
         setTasks(tasks.filter(x => x !== e.target.value));
         // filter() returns a new array withot the deleted task
     }
+    //Marking a task as done
+    function doneTask(e) {
+        e.target.parentElement.parentElement.style.textDecoration = "line-through";
+    }
 
     return (
         <div>
@@ -35,7 +39,7 @@ export default function Todo() {
                     <ol id="list">
                         {
                             tasks.map( (task, index) => {
-                                return <li id="listItem" key={index}> <div>{task}<button value={task} id="del" onClick={delTask}>del</button></div> </li>
+                                return <li id="listItem" key={index}> <div id="task"> {task} <div> <button id="done" onClick={doneTask}>Done</button><button value={task} id="del" onClick={delTask}>del</button></div> </div> </li>
                             } )
                         }
                     </ol>
