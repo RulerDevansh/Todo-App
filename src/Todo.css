@@ -25,6 +25,15 @@
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     overflow-y: scroll;
 }
+@media (max-width: 768px) {
+    .task {
+        width: 45%;
+        margin-right: 5vw;
+    }
+    .task-list {
+        width: 45%;
+    }
+}
 .task-list::-webkit-scrollbar {
     width: 0px;
 }
