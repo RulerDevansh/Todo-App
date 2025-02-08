@@ -1,0 +1,85 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+  }
+.task {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    height: 40vh;
+    margin-right: 10vw;
+}
+
+.task-list{
+    width: 30%;
+    height: 40vh;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    overflow-y: scroll;
+}
+.task-list::-webkit-scrollbar {
+    width: 0px;
+}
+#list {
+    margin-top: 1em;
+    margin-left:1em;
+    margin-right:1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+#listItem{
+    margin: .2em 0 .2em 0;
+    border: 1px dotted #ccc; 
+    border-radius: 5px;
+    padding: .3em;
+    width: clamp(40px, 80% ,80%);
+    font-size: clamp(.6rem, 3vw, 1rem);
+    text-align: left;
+}
+#listItem:hover {
+    background-color: whitesmoke;
+}
+#listItem div{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+#del {
+    background-color: #f44336;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    padding:2px;
+    font-size: clamp(.4rem, 2vw, .8rem);
+}
+#input {
+    width: 80%;
+    height: 2.5em;
+    margin: 0em 1em 0 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: .1em;
+    font-size: clamp(.6rem, 3vw, 1rem);
+}
+#Add {
+    width: 80%;
+    height: 2.5em;
+    margin: 1em;
+    border-radius: 5px;
+    padding: .5em;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+    font-size: clamp(.6rem, 3vw, 1rem);
+}
