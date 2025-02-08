@@ -8,7 +8,7 @@ export default function Todo() {
 
     //Adding a task
     function addTask(e) {
-        if (e.key === "Enter" && e.type==="keyup"| e.type === "click") {
+        if (e.key === "Enter" && e.type==="keyup"||e.type === "click") {            
             const input = document.getElementById("input");
             const task = input.value;
             if (task) {
@@ -16,8 +16,8 @@ export default function Todo() {
                 input.value = "";
             }
         }
-
     }
+    
     //Deleting a task
     function delTask(e) {
         setTasks(tasks.filter(x => x !== e.target.value));
